@@ -26,23 +26,28 @@ function parseWeather(json) {
   var parse = {
     temp: json.main.temp,
     description: json.weather[0].description,
+    iconImg: "http://openweathermap.org/img/wn/"+ json.weather[0].icon  +"@2x.png"
   };
   return parse;
 }
 
 app.get("/", (req, res) => {
   var clima;
-  https.get(createCall(["london", "metric"]), (response) => {
+  https.get(createCall(["nova iguacu", "metric"]), (response) => {
     if (response.statusCode == 200) {
       response.on("data", (data) => {
         clima = parseWeather(JSON.parse(data));
+        res.write("<p> The weather is "+clima.description+"</p>")
+        res.write("<h1>It's currently " + clima.temp + " degrees Celcius in Nova Iguacu</h1>")
+        res.write("<img src='"+clima.iconImg+"' />")
+        res.send()
               
       });
     } else {
       clima = "ERRO " + response.statusCode 
     }
   });
-  res.send(JSON.stringify(clima));
+  
 });
 
 app.listen(port, () => {
