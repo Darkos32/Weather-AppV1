@@ -1,6 +1,6 @@
 # Weather App
 
-Uma aplicação que permite saber o tempo atual numa determinada cidade usando a api [OpenWeather](https://openweathermap.org/) e baseado o . Feita com o intuito de praticar o uso de api's em servidores express, logo eu usei apenas o básico do html e também não apliquei css. Futuramente, planejo fazer uma versão mais completa.
+Uma aplicação que permite saber o tempo atual numa determinada cidade usando a api [OpenWeather](https://openweathermap.org/) e baseado na aplicação mostrada no curso de desenvolvimento web da [App Brewery](https://www.appbrewery.co) . Feita com o intuito de praticar o uso de api's em servidores express, logo eu usei apenas o básico do html e também não apliquei css. Futuramente, planejo fazer uma versão mais completa.
 
 ## O que eu usei
 
