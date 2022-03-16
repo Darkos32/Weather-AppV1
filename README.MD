@@ -17,6 +17,8 @@ Uma aplicação que permite saber o tempo atual numa determinada cidade usando a
 
 1. Instale os pacotes mencionados acima usando o comando `npm i [nome-do-pacote]`
 
-1. Clone o repositório
+1. Clone o repositório.
+
+1. Estabeleça seu arquivo `.env` com sua própria chav
 
 1. Execute `node server.js`
